@@ -1,0 +1,2 @@
+data: "<?xml version=\"1.0\"?>\n\n<robot name=\"my_robot\">\n\n  <!-- Main body -->\n  <link name=\"base_link\">\n\n    <visual>\n      <geometry>\n  ..."
+---
