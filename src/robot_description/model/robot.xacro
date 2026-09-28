@@ -294,17 +294,6 @@
     </visual>
 
 
-    <collision>
-
-      <origin xyz="0 0 0"
-              rpy="0 0 0"/>
-
-      <geometry>
-        <cylinder radius="0.06"
-                  length="0.04"/>
-      </geometry>
-
-    </collision>
 
 
     <inertial>
