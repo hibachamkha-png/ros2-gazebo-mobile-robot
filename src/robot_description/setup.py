@@ -7,8 +7,9 @@ package_name = 'robot_description'
 setup(
     name=package_name,
     version='0.0.0',
-
     packages=find_packages(exclude=['test']),
+    py_modules=['obstacles_marker'],
+    package_dir={'': 'src'},
 
     data_files=[
         (
@@ -23,6 +24,10 @@ setup(
             'share/' + package_name + '/model',
             glob('model/*')
         ),
+(
+    'share/' + package_name + '/worlds',
+    glob('worlds/*')
+),
         (
             'share/' + package_name + '/launch',
             glob('launch/*.py')
@@ -41,6 +46,8 @@ setup(
     tests_require=['pytest'],
 
     entry_points={
-        'console_scripts': [],
-    },
+         'console_scripts': 
+              ['obstacles_marker = obstacles_marker:main',],
+   
+ },
 )

@@ -1,3 +1,21 @@
 build/
 install/
 log/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Fichiers temporaires et sauvegardes
+*.swp
+*.bak
+*.before_mesh
+
+# Fichiers de diagnostic générés
+frames_*.gv
+frames_*.pdf
+
+# Fichiers vides accidentels
+/lidar_link
+/lidar_link:
+/ros2
